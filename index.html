@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Simon - Inicio</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cont_footer">
+        <center>
+        <br>
+        <h1 class="title_txt">Taller Simon</h1>
+        <br>
+        </center>
+    </div><br><br>
+    
+    <div class="Registro">
+    <center><br><h2 class="title_txt">Datos del dueño del carro</h2><br><br>
+        
+        <input class="input" type="text" id="Nombre" placeholder="Su Nombre Completo">
+        <input class="input" type="text" id="DUI" placeholder="Su DUI">
+        <input class="input" type="text" id="NIT" placeholder="Su NIT">
+        <br><br>
+        </center>
+    <center><h2 class="title_txt">Datos del carro</h2><br><br></center>
+    <center>
+    <select class="input" id="Marcas" onchange="MarcaCarro();">
+    <option value="1">Toyota</option>
+    <option value="2">Nissan</option>
+    <option value="3">Honda</option>
+    <option value="4">Kia</option>
+    <option value="5">Hyundai</option>     
+    </select> 
+    <input class="input" type="text" id="Modelo" value="Modelo:Toyota BD1A" disabled>
+    <input class="input" type="text" id="Año" placeholder="Año del carro">
+        <br><br>
+        <input class="input" type="text" id="Color" placeholder="Color del carro">
+    <input class="input" type="text" id="Placa" placeholder="Placa del carro">
+        <br><br>
+        <textarea class="input" id="texttarea" placeholder="Fallo del carro..."></textarea>
+        </center>
+     <br><br>   
+    <center><button class="botonB" id="botonB">Agregar Carro</button><br><br></center>
+    </div>
+    <br><br>
+    <div class="Registro">
+    <center><br><h2 class="title_txt">Lista de carros en el taller:</h2><br><br></center>
+        <div class="Contenedor">
+            <table class="tabla" id="lista_de_carros">
+                <thead>
+                <th>Nombre</th>
+                <th>DUI</th>
+                <th>NIT</th>
+                <th>Marca</th>
+                <th>Año</th>
+                <th>Color</th>
+                <th>Placa</th>
+                <th>Fallo</th>
+                </thead>
+                <tbody>
+                
+                
+                </tbody>
+            </table><br><br>
+        
+        </div>
+    </div>
+    
+      
+    
+    
+    
+    
+    
+    
+    <br><br>
+    <footer class="cont_footer">
+        <script src="Js/Script.js"></script>
+        <center>
+            <br>
+        <h2 class="title_txt">Estudiantes:</h2><br>
+        <h2 class="title_txt">Fernando Anzora - Fernando Andrade</h2>
+            <br>
+        </center>
+    </footer>
+</body>
+</html>
