@@ -74,5 +74,21 @@ body::-webkit-scrollbar-thumb {
 }
 
 .tabla{
-    width: 100%
+    width: 99%;
+    margin: auto;
+    border-collapse: collapse;
+    border-radius: 8px; 
+}
+
+tbody{
+    text-align: center;
+    background-color: #1c1c1c;
+    color: white;
+    border-radius: 8px;    
+}
+thead{
+    text-align: center;
+    background-color: #1c1c1c;
+    color: white;
+    border-radius: 8px;  
 }
