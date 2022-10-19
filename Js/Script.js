@@ -55,7 +55,7 @@ function MarcaCarro(){
 //Utilizamos la magia de DOM
 function creartabla(){
     //actualizamos la tabla segun el areglo
-    var lista = agregarcarrosa();
+    var lista = consegircarros();
     //seleccionamos el elemento a actualizar
     tbody = document.querySelector("#lista_de_carros tbody");
     //refrescamos el inerhtml
@@ -95,12 +95,14 @@ function creartabla(){
 }
 
 
+
 //Creamos un arreglo
-var listaCarros = [];
+    var listaCarros = [];
 
 //Creamos la funcion para actualizar la tabla
 
 function agregarcarrosa(nombre,dui,nit,marca,anio,color,placa,texttarea){
+    
     
     var nuevocarro = {
         Nombre: nombre,
@@ -110,12 +112,11 @@ function agregarcarrosa(nombre,dui,nit,marca,anio,color,placa,texttarea){
         Anio: anio,
         Color: color,
         Placa: placa,
-        Fallo: texttarea
-        
+        Fallo: texttarea   
     };
-    
+    console.log(nuevocarro);
     listaCarros.push(nuevocarro);
-    basedatoscarros(nuevocarro);
+    basedatoscarros(listaCarros);
     
     
 }
@@ -131,7 +132,7 @@ function consegircarros(){
     return listaCarros;
 }
 
-function basedatoscarros(plist){
-    localStorage.setItem("BDcarros",JSON.stringify(plist));
+function basedatoscarros(plista){
+    localStorage.setItem("BDcarros",JSON.stringify(plista));
     
 }
